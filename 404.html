@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>페이지를 찾을 수 없습니다 | 우드티켓</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/svg+xml" href="./static/favicon.svg?v=1771916740" />
+  <link rel="stylesheet" href="./static/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body { background: linear-gradient(135deg, #F0FDFA, #F5FFFE); min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; font-family: 'Noto Sans KR', sans-serif; }
+    .err-icon { font-size: 64px; color: #00C8D7; margin-bottom: 20px; }
+    .err-code { font-size: 96px; font-weight: 900; color: #00897B; line-height: 1; margin-bottom: 8px; }
+    .err-title { font-size: 22px; font-weight: 800; color: #111; margin-bottom: 12px; }
+    .err-desc { font-size: 14px; color: #6B7280; margin-bottom: 32px; line-height: 1.7; }
+    .err-btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .err-btn-main {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: linear-gradient(135deg, #00897B, #00C8D7);
+      color: #fff; font-size: 14px; font-weight: 700;
+      padding: 12px 24px; border-radius: 50px; text-decoration: none;
+      transition: all 0.2s;
+    }
+    .err-btn-main:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,137,123,0.3); }
+    .err-btn-sub {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #fff; color: #00897B; font-size: 14px; font-weight: 700;
+      padding: 12px 24px; border-radius: 50px; text-decoration: none;
+      border: 1.5px solid #00C8D7; transition: all 0.2s;
+    }
+    .err-btn-sub:hover { background: #F0FDFC; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <div class="err-icon"><i class="fas fa-map-signs"></i></div>
+  <div class="err-code">404</div>
+  <h1 class="err-title">페이지를 찾을 수 없습니다</h1>
+  <p class="err-desc">요청하신 페이지가 존재하지 않거나 이동되었습니다.<br/>주소를 다시 확인하시거나 홈으로 돌아가세요.</p>
+  <div class="err-btns">
+    <a href="./index.html" class="err-btn-main"><i class="fas fa-home"></i> 홈으로 가기</a>
+    <a href="#" class="err-btn-sub">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 3C6.477 3 2 6.477 2 11c0 2.895 1.578 5.44 4 6.977V22l3.777-2.082C10.489 20.291 11.232 20.4 12 20.4c5.523 0 10-3.477 10-7.7C22 7.477 17.523 3 12 3z"/></svg>
+      카카오톡 상담
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 배경 그라디언트 -->
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0C3D38"/>
+      <stop offset="55%" stop-color="#0D4F48"/>
+      <stop offset="100%" stop-color="#083530"/>
+    </linearGradient>
+    <!-- 민트 강조 그라디언트 -->
+    <linearGradient id="ogMint" x1="0" y1="0" x2="400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00C8D7"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <!-- 골드 강조 -->
+    <linearGradient id="ogGold" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <!-- 나뭇잎 -->
+    <linearGradient id="ogLeaf" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <!-- 카드 배경 -->
+    <linearGradient id="ogCard" x1="720" y1="160" x2="1160" y2="490" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#134E4A" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0A3B36" stop-opacity="0.9"/>
+    </linearGradient>
+    <!-- 글로우 -->
+    <radialGradient id="ogGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00C8D7" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00C8D7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="ogShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#00C8D7" flood-opacity="0.3"/>
+    </filter>
+    <filter id="ogTextShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+
+  <!-- 배경 패턴 격자 (미묘한 장식) -->
+  <g opacity="0.05">
+    <line x1="0" y1="105" x2="1200" y2="105" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="210" x2="1200" y2="210" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="315" x2="1200" y2="315" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="420" x2="1200" y2="420" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="525" x2="1200" y2="525" stroke="white" stroke-width="1"/>
+    <line x1="150" y1="0" x2="150" y2="630" stroke="white" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="630" stroke="white" stroke-width="1"/>
+    <line x1="450" y1="0" x2="450" y2="630" stroke="white" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="white" stroke-width="1"/>
+    <line x1="750" y1="0" x2="750" y2="630" stroke="white" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="630" stroke="white" stroke-width="1"/>
+    <line x1="1050" y1="0" x2="1050" y2="630" stroke="white" stroke-width="1"/>
+  </g>
+
+  <!-- 왼쪽 글로우 원 장식 -->
+  <circle cx="100" cy="315" r="280" fill="url(#ogGlow)" opacity="0.6"/>
+  <circle cx="1100" cy="315" r="220" fill="url(#ogGlow)" opacity="0.4"/>
+
+  <!-- 상단 민트 라인 -->
+  <rect x="0" y="0" width="1200" height="5" fill="url(#ogMint)"/>
+
+  <!-- ===== 왼쪽 메인 콘텐츠 ===== -->
+
+  <!-- 로고 영역 -->
+  <!-- 티켓 아이콘 (큰 버전) -->
+  <g transform="translate(70, 100)" filter="url(#ogShadow)">
+    <!-- 아이콘 배경 원 -->
+    <circle cx="44" cy="44" r="44" fill="url(#ogMint)" opacity="0.15"/>
+    <circle cx="44" cy="44" r="38" fill="url(#ogMint)" opacity="0.1"/>
+    <!-- 나뭇잎 -->
+    <path d="M24 36 C24 36 18 18 34 14 C50 10 53 28 44 36 C38 41 24 36 24 36 Z" fill="url(#ogLeaf)"/>
+    <path d="M24 36 C29 30 37 24 43 16" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <!-- ₩ -->
+    <text x="54" y="55" font-size="28" font-weight="900" fill="url(#ogGold)" font-family="Arial Black, Arial" text-anchor="middle">₩</text>
+  </g>
+
+  <!-- 브랜드명 -->
+  <text x="175" y="145" font-size="28" font-weight="900" fill="white" font-family="'Noto Sans KR', Arial" opacity="0.9" filter="url(#ogTextShadow)">우드티켓</text>
+  <text x="175" y="168" font-size="13" font-weight="400" fill="#00C8D7" font-family="Arial" letter-spacing="0.18em" opacity="0.8">WOODTICKET</text>
+
+  <!-- 구분선 -->
+  <rect x="70" y="195" width="520" height="3" rx="2" fill="url(#ogMint)" opacity="0.7"/>
+
+  <!-- 메인 타이틀 -->
+  <text x="70" y="270" font-size="52" font-weight="900" fill="white" font-family="'Noto Sans KR', Arial" filter="url(#ogTextShadow)">소액결제 현금화</text>
+  <text x="70" y="340" font-size="52" font-weight="900" fill="white" font-family="'Noto Sans KR', Arial" filter="url(#ogTextShadow)">업계 최저 수수료</text>
+
+  <!-- 서브 타이틀 (민트 강조) -->
+  <text x="70" y="395" font-size="26" font-weight="700" fill="url(#ogMint)" font-family="'Noto Sans KR', Arial">소액결제 75% · 정보이용료 80% · 신용카드 90%</text>
+
+  <!-- 하단 뱃지 3개 -->
+  <!-- 뱃지 1 -->
+  <rect x="70" y="435" width="148" height="42" rx="10" fill="rgba(0,200,215,0.15)" stroke="#00C8D7" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="144" y="462" font-size="15" font-weight="700" fill="#00C8D7" font-family="'Noto Sans KR', Arial" text-anchor="middle">🛡 100% 안전</text>
+
+  <!-- 뱃지 2 -->
+  <rect x="230" y="435" width="148" height="42" rx="10" fill="rgba(0,200,215,0.15)" stroke="#00C8D7" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="304" y="462" font-size="15" font-weight="700" fill="#00C8D7" font-family="'Noto Sans KR', Arial" text-anchor="middle">⚡ 5분 입금</text>
+
+  <!-- 뱃지 3 -->
+  <rect x="390" y="435" width="148" height="42" rx="10" fill="rgba(0,200,215,0.15)" stroke="#00C8D7" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="464" y="462" font-size="15" font-weight="700" fill="#00C8D7" font-family="'Noto Sans KR', Arial" text-anchor="middle">✅ 98% 승인율</text>
+
+  <!-- URL -->
+  <text x="70" y="575" font-size="16" fill="rgba(255,255,255,0.3)" font-family="Arial" letter-spacing="0.04em">woodticket.kr</text>
+
+  <!-- ===== 오른쪽 스탯 카드 ===== -->
+  <rect x="710" y="90" width="420" height="450" rx="22" fill="url(#ogCard)" stroke="rgba(0,200,215,0.25)" stroke-width="1.5"/>
+
+  <!-- 카드 내 상단 민트 바 -->
+  <rect x="710" y="90" width="420" height="6" rx="3" fill="url(#ogMint)"/>
+
+  <!-- 카드 타이틀 -->
+  <text x="920" y="155" font-size="18" font-weight="700" fill="rgba(255,255,255,0.6)" font-family="'Noto Sans KR', Arial" text-anchor="middle" letter-spacing="0.05em">지급률 안내</text>
+
+  <!-- 구분선 -->
+  <rect x="740" y="170" width="360" height="1" fill="rgba(255,255,255,0.08)"/>
+
+  <!-- 스탯 1: 소액결제 -->
+  <g transform="translate(740, 188)">
+    <rect width="360" height="72" rx="12" fill="rgba(0,200,215,0.08)" stroke="rgba(0,200,215,0.18)" stroke-width="1"/>
+    <text x="18" y="30" font-size="14" font-weight="700" fill="rgba(255,255,255,0.65)" font-family="'Noto Sans KR', Arial">소액결제 현금화</text>
+    <text x="324" y="32" font-size="26" font-weight="900" fill="url(#ogMint)" font-family="Arial Black, Arial" text-anchor="end">75%</text>
+    <text x="18" y="54" font-size="12" fill="rgba(255,255,255,0.35)" font-family="'Noto Sans KR', Arial">타사 대비 5~13% 높은 지급률</text>
+  </g>
+
+  <!-- 스탯 2: 정보이용료 -->
+  <g transform="translate(740, 272)">
+    <rect width="360" height="72" rx="12" fill="rgba(0,200,215,0.08)" stroke="rgba(0,200,215,0.18)" stroke-width="1"/>
+    <text x="18" y="30" font-size="14" font-weight="700" fill="rgba(255,255,255,0.65)" font-family="'Noto Sans KR', Arial">정보이용료 현금화</text>
+    <text x="324" y="32" font-size="26" font-weight="900" fill="url(#ogMint)" font-family="Arial Black, Arial" text-anchor="end">80%</text>
+    <text x="18" y="54" font-size="12" fill="rgba(255,255,255,0.35)" font-family="'Noto Sans KR', Arial">당일 즉시 처리, 24시간 운영</text>
+  </g>
+
+  <!-- 스탯 3: 신용카드 -->
+  <g transform="translate(740, 356)">
+    <rect width="360" height="72" rx="12" fill="rgba(0,200,215,0.08)" stroke="rgba(0,200,215,0.18)" stroke-width="1"/>
+    <text x="18" y="30" font-size="14" font-weight="700" fill="rgba(255,255,255,0.65)" font-family="'Noto Sans KR', Arial">신용카드 현금화</text>
+    <text x="324" y="32" font-size="26" font-weight="900" fill="url(#ogGold)" font-family="Arial Black, Arial" text-anchor="end">90%</text>
+    <text x="18" y="54" font-size="12" fill="rgba(255,255,255,0.35)" font-family="'Noto Sans KR', Arial">업계 최고 지급률 보장</text>
+  </g>
+
+  <!-- 카드 하단 CTA -->
+  <rect x="740" y="445" width="360" height="52" rx="13" fill="url(#ogMint)" filter="url(#ogShadow)"/>
+  <text x="920" y="477" font-size="17" font-weight="900" fill="#072824" font-family="'Noto Sans KR', Arial" text-anchor="middle">카카오톡 무료 상담 →</text>
+
+  <!-- 하단 민트 라인 -->
+  <rect x="0" y="625" width="1200" height="5" rx="2" fill="url(#ogMint)"/>
+</svg>
