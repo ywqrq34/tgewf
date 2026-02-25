@@ -161,20 +161,15 @@
     function openNav() {
       mobileNav && mobileNav.classList.add('active');
       overlay && overlay.classList.add('active');
-      overlay && (overlay.style.display = 'block');
       hamburger && hamburger.classList.add('active');
       document.body.style.overflow = 'hidden';
     }
+
     function closeNav() {
       mobileNav && mobileNav.classList.remove('active');
       overlay && overlay.classList.remove('active');
       hamburger && hamburger.classList.remove('active');
-      document.body.style.overflow = '';
-      setTimeout(function () {
-        if (overlay && !overlay.classList.contains('active')) {
-          overlay.style.display = 'none';
-        }
-      }, 300);
+       document.body.style.overflow = '';
     }
 
     hamburger && hamburger.addEventListener('click', openNav);
