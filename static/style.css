@@ -2802,12 +2802,7 @@ strong { font-weight: 700; }
 
   /* 3. 휴대폰 세로 길이 늘리기 */
   .phone-shell {
-    width: 180px !important;
-    height: 340px !important;
-  }
-
-  .hero-layout {
-    grid-template-columns: 1fr 180px !important;
+    height: 240px !important;
   }
 
 }
@@ -2818,8 +2813,8 @@ strong { font-weight: 700; }
 }
 
 .hsl-item svg {
-  width: 16px !important;
-  height: 16px !important;
+  width: 14px !important;
+  height: 14px !important;
 }
 
 .hsl-dot {
