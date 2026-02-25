@@ -385,10 +385,20 @@ strong { font-weight: 700; }
    모바일 내비
 ============================================ */
 .mobile-overlay {
-  display: none; position: fixed; inset: 0;
-  background: rgba(15,23,42,0.5); z-index: 999; opacity: 0; transition: opacity 0.3s;
+  position: fixed;
+  inset: 0;
+  background: rgba(15,23,42,0.5);
+  z-index: 999;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
-.mobile-overlay.active { opacity: 1; }
+
+.mobile-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
 .mobile-nav {
   position: fixed; top: 0; right: -300px; width: 285px; height: 100%;
   background: var(--white); z-index: 1000;
