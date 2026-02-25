@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://xn--hy1b215ac8f95d.com/sitemap.xml

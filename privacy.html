@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보 처리방침 | 우드티켓</title>
+  <meta name="description" content="우드티켓 개인정보 처리방침. 수집 항목, 이용 목적, 보유 기간, 파기 절차 등 개인정보 보호 정책을 안내합니다." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://xn--hy1b215ac8f95d.com/privacy" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="우드티켓" />
+  <meta property="og:title" content="개인정보 처리방침 | 우드티켓" />
+  <meta property="og:description" content="우드티켓 개인정보 처리방침. 수집 항목, 이용 목적, 보유 기간, 파기 절차 등 개인정보 보호 정책을 안내합니다." />
+  <meta property="og:url" content="https://xn--hy1b215ac8f95d.com/privacy" />
+  <meta property="og:locale" content="ko_KR" />
+  <link rel="icon" type="image/svg+xml" href="./static/favicon.svg?v=1771916740" />
+  <link rel="stylesheet" href="./static/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .sub-wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+    .sub-back {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 13px; font-weight: 700; color: var(--mint-700);
+      background: var(--mint-50); border: 1.5px solid var(--mint-200);
+      padding: 8px 16px; border-radius: 50px; margin-bottom: 32px;
+      transition: all 0.2s; text-decoration: none;
+    }
+    .sub-back:hover { background: var(--mint-100); transform: translateX(-2px); }
+    .sub-hero {
+      background: linear-gradient(135deg, #00897B 0%, #00C8D7 70%, #A8D932 100%);
+      border-radius: 18px; padding: 32px 28px; margin-bottom: 36px;
+      color: #fff; position: relative; overflow: hidden;
+    }
+    .sub-hero::before {
+      content: ''; position: absolute; top: -40px; right: -40px;
+      width: 180px; height: 180px; border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+    }
+    .sub-hero-icon {
+      width: 52px; height: 52px; border-radius: 14px;
+      background: rgba(255,255,255,0.20); border: 1.5px solid rgba(255,255,255,0.30);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; margin-bottom: 14px;
+    }
+    .sub-hero h1 { font-size: 22px; font-weight: 900; margin-bottom: 6px; }
+    .sub-hero p  { font-size: 12px; opacity: 0.82; line-height: 1.6; }
+    .sub-hero-meta {
+      display: flex; gap: 16px; margin-top: 14px;
+      font-size: 11px; opacity: 0.75;
+    }
+    .sub-hero-meta span { display: flex; align-items: center; gap: 5px; }
+
+    .sub-toc {
+      background: var(--gray-50); border: 1.5px solid var(--gray-200);
+      border-radius: 14px; padding: 18px 20px; margin-bottom: 32px;
+    }
+    .sub-toc h3 { font-size: 12px; font-weight: 800; color: var(--gray-500); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 12px; }
+    .sub-toc ol { list-style: none; display: flex; flex-direction: column; gap: 6px; padding-left: 0; }
+    .sub-toc ol li a {
+      font-size: 13px; color: var(--mint-700); font-weight: 600;
+      display: flex; align-items: center; gap: 6px; text-decoration: none;
+    }
+    .sub-toc ol li a:hover { color: var(--mint-500); }
+    .sub-toc ol li a::before {
+      content: attr(data-num);
+      font-size: 10px; font-weight: 800; color: #fff;
+      background: var(--mint-500); width: 18px; height: 18px;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .sub-section { margin-bottom: 40px; scroll-margin-top: 80px; }
+    .sub-section-title {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 16px; font-weight: 900; color: var(--gray-900);
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--mint-200);
+    }
+    .sub-section-title .num-badge {
+      width: 26px; height: 26px; border-radius: 50%; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--mint-500), var(--mint-700));
+      color: #fff; font-size: 11px; font-weight: 900;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .sub-section p { font-size: 13px; color: var(--gray-600); line-height: 1.85; margin-bottom: 10px; }
+    .sub-section ul { list-style: none; display: flex; flex-direction: column; gap: 7px; margin-bottom: 10px; padding-left: 0; }
+    .sub-section ul li {
+      font-size: 13px; color: var(--gray-600); line-height: 1.75;
+      padding-left: 18px; position: relative;
+    }
+    .sub-section ul li::before {
+      content: ''; position: absolute; left: 0; top: 8px;
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--mint-400);
+    }
+    .sub-section strong { color: var(--gray-900); font-weight: 700; }
+
+    .sub-highlight {
+      background: linear-gradient(135deg, #E8FFFE, #F0FDFC);
+      border: 1.5px solid var(--mint-200); border-radius: 12px;
+      padding: 16px 18px; margin: 14px 0;
+      font-size: 13px; color: var(--mint-800); line-height: 1.75;
+    }
+    .sub-highlight i { color: var(--mint-500); margin-right: 6px; }
+
+    .sub-table {
+      width: 100%; border-collapse: collapse; margin: 14px 0;
+      font-size: 12px; border-radius: 10px; overflow: hidden;
+    }
+    .sub-table th {
+      background: linear-gradient(135deg, var(--mint-600), var(--mint-500));
+      color: #fff; font-weight: 700; padding: 10px 14px; text-align: left;
+    }
+    .sub-table td {
+      padding: 10px 14px; border-bottom: 1px solid var(--gray-100);
+      color: var(--gray-600); vertical-align: top; line-height: 1.65;
+    }
+    .sub-table tr:last-child td { border-bottom: none; }
+    .sub-table tr:nth-child(even) td { background: var(--gray-50); }
+
+    .sub-contact-box {
+      background: linear-gradient(135deg, #00897B, #00C8D7);
+      border-radius: 16px; padding: 24px 22px; text-align: center;
+      color: #fff; margin-top: 40px;
+    }
+    .sub-contact-box h3 { font-size: 16px; font-weight: 900; margin-bottom: 8px; }
+    .sub-contact-box p  { font-size: 12px; opacity: 0.85; margin-bottom: 16px; }
+    .sub-contact-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.92); color: var(--mint-700);
+      font-size: 13px; font-weight: 800; padding: 11px 24px;
+      border-radius: 50px; transition: all 0.2s; text-decoration: none;
+    }
+    .sub-contact-btn:hover { background: #fff; transform: translateY(-2px); }
+
+    /* 서브페이지 심플 헤더/푸터 */
+    .sub-header {
+      background: linear-gradient(90deg, #00897B, #00C8D7);
+      padding: 14px 20px; display: flex; align-items: center;
+      justify-content: space-between; position: sticky; top: 0; z-index: 100;
+    }
+    .sub-header-logo {
+      display: flex; align-items: center; gap: 8px;
+      color: #fff; font-weight: 900; font-size: 16px; text-decoration: none;
+    }
+    .sub-header-logo img { width: 28px; height: 28px; object-fit: contain; filter: brightness(1.2); }
+    .sub-header-home {
+      font-size: 12px; color: rgba(255,255,255,0.85); font-weight: 600;
+      display: flex; align-items: center; gap: 5px; text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header class="sub-header">
+  <a href="/" class="sub-header-logo">
+    <img src="./static/logo.png" alt="우드티켓" />
+    우드티켓
+  </a>
+  <a href="/" class="sub-header-home"><i class="fas fa-home"></i> 홈으로</a>
+</header>
+
+<div class="sub-wrap">
+  <a href="/" class="sub-back"><i class="fas fa-arrow-left"></i> 홈으로 돌아가기</a>
+
+  <div class="sub-hero">
+    <div class="sub-hero-icon"><i class="fas fa-shield-halved"></i></div>
+    <h1>개인정보 처리방침</h1>
+    <p>우드티켓은 고객님의 개인정보를 소중히 여기며, 관련 법령을 준수하여 안전하게 보호합니다.</p>
+    <div class="sub-hero-meta">
+      <span><i class="fas fa-calendar"></i> 시행일: 2025년 1월 1일</span>
+      <span><i class="fas fa-sync-alt"></i> 최종 수정: 2025년 2월 1일</span>
+    </div>
+  </div>
+
+  <div class="sub-toc">
+    <h3>목차</h3>
+    <ol>
+      <li><a href="#p1" data-num="1">수집하는 개인정보 항목</a></li>
+      <li><a href="#p2" data-num="2">개인정보 수집 및 이용 목적</a></li>
+      <li><a href="#p3" data-num="3">개인정보 보유 및 이용 기간</a></li>
+      <li><a href="#p4" data-num="4">개인정보의 제3자 제공</a></li>
+      <li><a href="#p5" data-num="5">개인정보 처리 위탁</a></li>
+      <li><a href="#p6" data-num="6">정보주체의 권리·의무</a></li>
+      <li><a href="#p7" data-num="7">개인정보 파기 절차 및 방법</a></li>
+      <li><a href="#p8" data-num="8">개인정보 보호책임자</a></li>
+    </ol>
+  </div>
+
+  <div class="sub-section" id="p1">
+    <h2 class="sub-section-title"><span class="num-badge">1</span>수집하는 개인정보 항목</h2>
+    <p>우드티켓은 서비스 제공을 위해 아래와 같은 최소한의 개인정보를 수집합니다.</p>
+    <table class="sub-table">
+      <thead><tr><th>구분</th><th>수집 항목</th><th>수집 방법</th></tr></thead>
+      <tbody>
+        <tr><td><strong>필수</strong></td><td>성명, 휴대전화번호, 통신사, 입금 계좌번호</td><td>상담 신청 시 직접 입력</td></tr>
+        <tr><td><strong>선택</strong></td><td>이메일 주소</td><td>상담 신청 시 직접 입력</td></tr>
+        <tr><td><strong>자동 수집</strong></td><td>접속 IP, 접속 시간, 서비스 이용 기록</td><td>서비스 이용 중 자동 수집</td></tr>
+      </tbody>
+    </table>
+    <div class="sub-highlight">
+      <i class="fas fa-info-circle"></i>
+      <strong>본인 확인 완료 후</strong> 수집된 개인정보(성명, 전화번호 등)는 서비스 처리 완료 즉시 안전하게 파기됩니다.
+    </div>
+  </div>
+
+  <div class="sub-section" id="p2">
+    <h2 class="sub-section-title"><span class="num-badge">2</span>개인정보 수집 및 이용 목적</h2>
+    <p>수집된 개인정보는 아래 목적 이외의 용도로는 사용하지 않으며, 이용 목적 변경 시 사전 동의를 받습니다.</p>
+    <ul>
+      <li>소액결제·정보이용료·신용카드 현금화 서비스 제공 및 처리</li>
+      <li>본인 확인 및 서비스 이용 자격 검증</li>
+      <li>입금 계좌 확인 및 정산 처리</li>
+      <li>서비스 관련 공지사항 전달 및 고객 문의 응대</li>
+      <li>불법·부정이용 방지 및 보안 운영</li>
+      <li>법령 의무 이행</li>
+    </ul>
+  </div>
+
+  <div class="sub-section" id="p3">
+    <h2 class="sub-section-title"><span class="num-badge">3</span>개인정보 보유 및 이용 기간</h2>
+    <p>원칙적으로 개인정보 수집 및 이용 목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 관련 법령에 의해 보존이 필요한 경우 아래 기간 동안 보관합니다.</p>
+    <table class="sub-table">
+      <thead><tr><th>보존 항목</th><th>보존 기간</th><th>관련 법령</th></tr></thead>
+      <tbody>
+        <tr><td>서비스 이용 기록, 접속 로그</td><td>3개월</td><td>통신비밀보호법</td></tr>
+        <tr><td>소비자 불만·분쟁 처리 기록</td><td>3년</td><td>전자상거래 등에서의 소비자보호에 관한 법률</td></tr>
+        <tr><td>계약·청약 철회 기록</td><td>5년</td><td>전자상거래 등에서의 소비자보호에 관한 법률</td></tr>
+        <tr><td>대금결제·재화 공급 기록</td><td>5년</td><td>전자상거래 등에서의 소비자보호에 관한 법률</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub-section" id="p4">
+    <h2 class="sub-section-title"><span class="num-badge">4</span>개인정보의 제3자 제공</h2>
+    <p>우드티켓은 원칙적으로 고객님의 개인정보를 외부에 제공하지 않습니다. 다만, 다음의 경우에는 예외로 합니다.</p>
+    <ul>
+      <li>고객님이 사전에 동의한 경우</li>
+      <li>법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</li>
+      <li>서비스 제공에 따른 요금 정산을 위해 필요한 경우</li>
+    </ul>
+    <div class="sub-highlight">
+      <i class="fas fa-lock"></i>
+      현재 우드티켓은 고객 개인정보를 <strong>제3자에게 제공하지 않습니다.</strong>
+    </div>
+  </div>
+
+  <div class="sub-section" id="p5">
+    <h2 class="sub-section-title"><span class="num-badge">5</span>개인정보 처리 위탁</h2>
+    <p>우드티켓은 원활한 서비스 제공을 위해 아래와 같이 개인정보 처리 업무를 위탁하고 있습니다.</p>
+    <table class="sub-table">
+      <thead><tr><th>수탁 업체</th><th>위탁 업무</th><th>보유 기간</th></tr></thead>
+      <tbody>
+        <tr><td>카카오(주)</td><td>카카오톡 채널 상담 서비스 운영</td><td>서비스 이용 기간</td></tr>
+        <tr><td>각 통신사(SKT, KT, LGU+)</td><td>소액결제 한도 확인 및 처리</td><td>처리 완료 즉시 파기</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub-section" id="p6">
+    <h2 class="sub-section-title"><span class="num-badge">6</span>정보주체의 권리·의무</h2>
+    <p>고객님은 언제든지 아래의 권리를 행사할 수 있습니다.</p>
+    <ul>
+      <li>개인정보 열람 요청</li>
+      <li>오류 등이 있을 경우 정정 요청</li>
+      <li>삭제 요청</li>
+      <li>처리 정지 요청</li>
+    </ul>
+    <p>위 권리 행사는 카카오톡 상담을 통해 요청하실 수 있으며, 우드티켓은 지체 없이 조치하겠습니다.</p>
+    <div class="sub-highlight">
+      <i class="fas fa-exclamation-triangle"></i>
+      만 14세 미만 아동의 경우 법정대리인의 동의가 필요하며, 우드티켓은 만 14세 미만 아동의 개인정보를 수집하지 않습니다.
+    </div>
+  </div>
+
+  <div class="sub-section" id="p7">
+    <h2 class="sub-section-title"><span class="num-badge">7</span>개인정보 파기 절차 및 방법</h2>
+    <p>우드티켓은 원칙적으로 개인정보 이용 목적이 달성된 후에는 해당 정보를 지체없이 파기합니다.</p>
+    <ul>
+      <li><strong>파기 절차:</strong> 수집된 개인정보는 목적 달성 후 별도 DB에 옮겨(종이의 경우 별도 서류함) 내부 방침 및 기타 관련 법령에 따라 일정 기간 저장된 후 파기됩니다.</li>
+      <li><strong>파기 방법 (전자파일):</strong> 기술적 방법을 사용하여 복원이 불가능한 방법으로 영구 삭제합니다.</li>
+      <li><strong>파기 방법 (출력물):</strong> 분쇄기로 분쇄하거나 소각합니다.</li>
+    </ul>
+    <div class="sub-highlight">
+      <i class="fas fa-fire"></i>
+      서비스 처리 <strong>완료 즉시</strong> 수집된 개인정보(성명, 전화번호, 계좌번호 등)는 복원 불가 방법으로 즉시 파기됩니다.
+    </div>
+  </div>
+
+  <div class="sub-section" id="p8">
+    <h2 class="sub-section-title"><span class="num-badge">8</span>개인정보 보호책임자</h2>
+    <p>우드티켓은 개인정보 처리에 관한 업무를 총괄하고, 개인정보 처리와 관련한 정보주체의 불만 처리 및 피해 구제 등을 위해 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
+    <table class="sub-table">
+      <thead><tr><th>구분</th><th>내용</th></tr></thead>
+      <tbody>
+        <tr><td><strong>업체명</strong></td><td>우드티켓 (WOODTICKET)</td></tr>
+        <tr><td><strong>문의 방법</strong></td><td>카카오톡 및 전화</td></tr>
+        <tr><td><strong>운영 시간</strong></td><td>24시간 365일</td></tr>
+        <tr><td><strong>처리 기간</strong></td><td>문의 접수 후 영업일 기준 3일 이내 답변</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub-contact-box">
+    <h3><i class="fas fa-comment-dots"></i> 개인정보 관련 문의</h3>
+    <p>개인정보 처리에 관한 문의 및 불만은 카카오톡으로 언제든지 연락 주세요.</p>
+    <a href="https://open.kakao.com/o/sqWai8hi" class="sub-contact-btn" target="_blank" rel="nofollow noopener noreferrer"><i class="fas fa-comment"></i> 카카오톡 문의하기</a>
+  </div>
+</div>
+
+</body>
+</html>
