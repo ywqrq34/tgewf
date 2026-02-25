@@ -2767,3 +2767,59 @@ strong { font-weight: 700; }
   from { opacity: 0; transform: translateY(-10px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+/* ===== 모바일 H1 강제 확대 ===== */
+.hero-title {
+  font-size: 28px !important;
+  line-height: 1.18 !important;
+}
+
+.hero-title-accent {
+  font-size: 23px !important;
+}
+/* ===== 히어로 문제 전체 강제 수정 ===== */
+
+/* 1. 휴대폰 그림자 안 잘리게 */
+.hero-section {
+  overflow: visible !important;
+}
+
+/* 2. 모바일에서 하단 빈공간 줄이기 */
+@media (max-width: 480px) {
+
+  .hero-section {
+    padding: 16px 0 10px !important;
+  }
+
+  /* 3. 휴대폰 세로 길이 늘리기 */
+  .phone-shell {
+    width: 180px !important;
+    height: 340px !important;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr 180px !important;
+  }
+
+}
+/* ===== 서비스 라인 글자 전체 확대 ===== */
+.hsl-item {
+  font-size: 9px !important;
+  padding: 5px 10px !important;
+}
+
+.hsl-item svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.hsl-dot {
+  width: 4px !important;
+  height: 4px !important;
+}
+/* ===== 휴대폰 그림자 잘림 방지 ===== */
+.hero-section,
+.hero-container,
+.hero-layout,
+.hero-phone-col {
+  overflow: visible !important;
+}
